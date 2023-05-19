@@ -302,6 +302,19 @@ body {
   .modal {
     transform: scale(0.9);
   }
+  #start, #continue, #new-game, #exit {
+    transform: scale(0.7);
+    font-size: 1em;
+    margin-top: 5%;
+}
+#player-message {
+  transform: scale(0.7);
+}
+
+#winner-message {
+  transform: scale(0.7);
+}
+
 }
 
 @media (max-width: 800px) {
