@@ -1,8 +1,7 @@
 html, body {
     height: 100%;
-    margin: 0;
     font-size: 16px;
-    overflow: hidden;
+    overflow: auto;
   }
 
   body {
@@ -428,7 +427,7 @@ h1 {
     width: 100%;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     body {
       transform: scale(0.8);
     }
@@ -438,4 +437,4 @@ h1 {
     body {
       transform: scale(0.6);
     }
-  }
+  } */

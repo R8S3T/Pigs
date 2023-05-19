@@ -1,11 +1,13 @@
 /* BACKGROUND */
 
-body {
+html, body {
+  height: 100%;
   font-size: 16px;
+  overflow: auto;
 }
 
-html, body {
-  overflow: hidden;
+body {
+  transform-origin: top left;
 }
 
 .game {
@@ -613,7 +615,7 @@ html, body {
 }
 
 
-
+/* 
 @media (max-width: 1200px) {
   body {
     transform: scale(0.8);
@@ -624,4 +626,4 @@ html, body {
   body {
     transform: scale(0.6);
   }
-}
+} */

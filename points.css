@@ -1,8 +1,13 @@
-body {
-  margin: 0;
-  overflow: hidden;
+html, body {
+  height: 100%;
   font-size: 16px;
+  overflow: auto;
 }
+
+body {
+  transform-origin: top left;
+}
+
 
 #game-container {
   position: absolute;
@@ -273,7 +278,7 @@ body {
   width: 100%; 
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   body {
     transform: scale(0.8);
   }
@@ -284,3 +289,4 @@ body {
     transform: scale(0.6);
   }
 }
+ */
