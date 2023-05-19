@@ -429,12 +429,12 @@ h1 {
 
 @media (max-width: 1200px) {
     body {
-      transform: scale(0.8);
+      transform: scale(1);
     }
   }
   
   @media (max-width: 800px) {
     body {
-      transform: scale(0.6);
+      transform: scale(1);
     }
   }
