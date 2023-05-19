@@ -278,7 +278,7 @@ body {
   width: 100%; 
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body {
     transform: scale(1);
     transform-origin: top left;
