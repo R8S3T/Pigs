@@ -283,6 +283,25 @@ body {
     transform: scale(1);
     transform-origin: top left;
   }
+  #scoreboard {
+    transform: scale(0.7);
+  }
+  .modal-content input {
+    transform: scale(0.7);
+  }
+  .input-group {
+    transform: scale(0.95);
+  }
+  
+  .player-name {
+    font-size: 1em;
+  }
+  .modal-content label {
+    transform: scale(0.8);
+  }
+  .modal {
+    transform: scale(0.9);
+  }
 }
 
 @media (max-width: 800px) {
