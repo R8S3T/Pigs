@@ -1,12 +1,14 @@
 html, body {
   height: 100%;
   font-size: 16px;
-  overflow: auto;
+  overflow: hidden; /* Set overflow to hidden */
 }
 
 body {
   transform-origin: top left;
+  position: relative; /* Add position relative */
 }
+
 
 
 #game-container {
@@ -314,12 +316,96 @@ body {
 #winner-message {
   transform: scale(0.7);
 }
-
+.container-pigs-brown {
+  transform: scale(0.8);
 }
 
-@media (max-width: 800px) {
+.container-pigs-pink {
+  transform: scale(0.8);
+  margin-top: 3em;
+}
+#description-box {
+  height: 10em;
+  width: 34em;
+  margin-left: 20%;
+}
+
+.description-text {
+  font-size: 1.4em;
+}
+#start-mud-points {
+  margin: -10em -30em 0.5em -80em;
+}
+
+#index-mud-points {
+  margin: -10em -45em 0.5em 5em;
+}
+#start-mud-points, #index-mud-points {
+  transform: scale(28%);
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
   body {
     transform: scale(1);
     transform-origin: top left;
   }
+  #scoreboard {
+    transform: scale(0.7);
+  }
+  .modal-content input {
+    transform: scale(0.7);
+  }
+  .input-group {
+    transform: scale(0.95);
+  }
+  
+  .player-name {
+    font-size: 1em;
+  }
+  .modal-content label {
+    transform: scale(0.8);
+  }
+  .modal {
+    transform: scale(0.9);
+  }
+  #start, #continue, #new-game, #exit {
+    transform: scale(0.7);
+    font-size: 1em;
+    margin-top: 5%;
+}
+#player-message {
+  transform: scale(0.7);
+}
+
+#winner-message {
+  transform: scale(0.7);
+}
+.container-pigs-brown {
+  transform: scale(0.8);
+}
+
+.container-pigs-pink {
+  transform: scale(0.8);
+  margin-top: 3em;
+}
+#description-box {
+  height: 9em;
+  width: 30em;
+  margin-left: 20%;
+}
+
+.description-text {
+  font-size: 1.2em;
+}
+#start-mud-points {
+  margin: -10em -26em 0.5em -70em;
+}
+
+#index-mud-points {
+  margin: -10em -40em 0.5em 5em;
+}
+#start-mud-points, #index-mud-points {
+  transform: scale(25%);
+}
 }

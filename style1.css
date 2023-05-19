@@ -1,13 +1,14 @@
 html, body {
     height: 100%;
     font-size: 16px;
-    overflow: auto;
+    overflow: hidden; /* Set overflow to hidden */
   }
-
+  
   body {
     transform-origin: top left;
+    position: relative; /* Add position relative */
   }
-
+  
 .top {
     margin-top: 10em;
     margin-left: 10em;
