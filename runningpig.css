@@ -1,7 +1,7 @@
  /* Running pig */
 
  .size {
-    transform: scale(65%);
+    transform: scale(80%);
 }
 
 #gamePigBrown{
@@ -305,27 +305,3 @@
     }
 }
 
-
-
-/* Media Query for Tablets Ipads portrait mode */
-/* @media (min-width: 768px) and (max-width: 1024px){
-    #game, .puddle {
-        transform: scale(0.8);
-        transform-origin: center;
-    }
-} */
-  
-/* Media Query for Laptops and Desktops */
-/* @media (min-width: 1025px) and (max-width: 1280px){
-    #game {
-        transform: scale(85%);
-    }
-} */
-  
-/* Media Query for Large screens */
-/* @media (min-width: 1281px) {
-    #game {
-        transform: scale(100%);
-    }
-}
- */
