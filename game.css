@@ -775,10 +775,14 @@ body {
 }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 992px) and (max-width: 1199px)  {
   body {
     transform: scale(0.6);
   }
+  .mud {
+    right: -16%;
+    transform: scale(0.7);
+}
 
 }
 
