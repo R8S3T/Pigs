@@ -1,6 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
+  font-size: 16px;
 }
 
 #game-container {
@@ -120,24 +121,6 @@ body {
 }
 
 
-/* Description of Game*/
-#description-box {
-  border: 10px solid #a55233;
-  padding: 20px;
-  margin: 10px;
-  height: 20em;
-  width: 57em;
-  margin-left: 25%;
-  margin-top: 4%;
-}
-
-.description-text {
-  font-size: 2.2em;
-  line-height: 0.8;
-  text-align: center;
-}
-
-
 .container-pigs-brown {
   display: block;
   margin-top: 6em;
@@ -190,6 +173,30 @@ body {
     font-weight: bold;
   }
 
+
+/*Description Box */
+
+#description {
+  position: relative;
+}
+  /* Description of Game*/
+#description-box {
+  position: relative;
+  border: 0.625em solid #a55233; 
+  padding: 1.25em;
+  margin: 0.625em; 
+  height: 15em;
+  width: 57em;
+  margin-left: 25%;
+  margin-top: 4%;
+}
+
+.description-text {
+  font-size: 2em;
+  line-height: 0.8;
+  text-align: center;
+}
+
   /* Mud Buttons */
 
   .container-mud-buttons-points {
@@ -204,7 +211,7 @@ body {
 
 #start-mud-points, #index-mud-points {
   background-color: #402a23;
-  position: relative;
+  position: absolute;
   margin-top: 3em;
   margin-bottom: 3em;
   height: 9.375em;
@@ -215,7 +222,7 @@ body {
 
 .start-mud-one-points, .index-mud-one-points {
   background-color: #402a23;
-  position: relative;
+  position: fixed;
   height: 8.75em;
   width: 30em;
   top: -4.44em;
@@ -225,7 +232,7 @@ body {
 
 .start-mud-two-points, .index-mud-two-points {
   background-color: #402a23;
-  position: relative;
+  position: fixed;
   height: 8.75em;
   width: 30em;
   top: -4.44em;
@@ -235,11 +242,11 @@ body {
 
 
 #start-mud-points {
-  margin: -30em 2em 0.5em -118em;
+  margin: -10em 2em 0.5em -80em;
 }
 
 #index-mud-points {
-  margin: -30em -2em 0.5em 5em;
+  margin: -10em -80em 0.5em 5em;
 }
 
 .points-text {
@@ -264,4 +271,21 @@ body {
   color: #e7eaf6;
   text-align: center;
   width: 100%; 
+}
+
+/* Styles for normal zoom level */
+@media screen and (max-width: 100%) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Styles for zoomed-in level */
+@media screen and (max-width: 125%) {
+
+}
+
+/* Styles for zoomed-out level */
+@media screen and (max-width: 75%) {
+  /* Adjust styles for zoomed-out level */
 }
