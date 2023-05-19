@@ -444,7 +444,7 @@ h1 {
         transform: scale(0.8);
     }
     .pig-two {
-        margin-left: 23em;
+        margin-left: 20em;
     }
     .top-pig-pink {
         margin-left: 6em;
@@ -455,12 +455,19 @@ h1 {
     }
     #start-mud, #instruction-mud {
         transform: scale(30%);
+        margin-top: -1em;
     }
     #start-mud {
-        margin-right: 65em;
+        margin-right: 55em;
     }
     #instruction-mud {
-        margin-right: -20em;
+        margin-right: -25em;
+    }
+    .container {
+        height: 40%;
+    }
+    #index-container {
+        margin-left: 15%;
     }
   }
 
