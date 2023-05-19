@@ -1,14 +1,12 @@
 html, body {
     height: 100%;
     margin: 0;
-  }
-  
-body {
     font-size: 16px;
-}
-
-  html, body {
     overflow: hidden;
+  }
+
+  body {
+    transform-origin: top left;
   }
 
 .top {
@@ -16,45 +14,56 @@ body {
     margin-left: 10em;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    min-height: 100%;
-    margin-bottom: 10em;
-}
-
 .heading {
+/*     min-height: 30%; */
     text-align: center;
-    margin: 1em 2em 1em 2em;
+    margin: 1rem 2rem 1rem 2rem;
 }
 
 h1 {
     color: #ffaaa5;
     font-size: 5.5vw;
-    text-shadow: 0 0 0.1em #45171d, 0 0 1em #ffaaa5;
+    text-shadow: 0 0 0.1rem #45171d, 0 0 1rem #ffaaa5;
     place-items: center;
 }
 
 .heading h2 {
     font-size: 3vw;
-    margin-top: -0.8em;
+    margin-top: -0.8rem;
 }
 
 .heading h3 {
     font-size: 2vw;
-    margin-bottom: 3em;
-    margin-top: 2em;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 50%;
+    margin-bottom: 10%;
 }
 
 .col-6 {
     display: flex;
-    align-items: center; 
-    margin-left: 20em;
+    align-items: center;
+    margin-top: 5em;
   }
 
  .top-pig-pink, .pig-two {
-    margin: 5em 0 2em 32em;
-} 
+    flex: 1 1 40%; /* This means the pigs will take up 21% of the container's width, but shrink if there isn't enough space */
+    margin: 1%;
+}
+
+.top-pig-pink {
+    margin-left: 20em;
+}
+
+.pig-two {
+    margin-left: 40em;
+}
 
 /* PINK PIG TOP */
 
@@ -70,7 +79,7 @@ h1 {
     background-color: #ffaaa5;
     height: 5.3em;
     width: 5.3em;
-    position: relative;
+    position: absolute;
     top: -3em;
     border-radius: 50%;
 }
@@ -338,12 +347,12 @@ h1 {
   .top-body-brown::after {
     content: '';
     position: absolute;
-    top: 1.875em; /* 30px / 16 */
-    left: -1.125em; /* -18px / 16 */
-    width: 1.25em; /* 20px / 16 */
-    height: 1.25em; /* 20px / 16 */
+    top: 1.875em; 
+    left: -1.125em; 
+    width: 1.25em;
+    height: 1.25em;
     border-radius: 50%;
-    box-shadow: -0.1875em -0.0625em 0px 0px #854836; /* -3px / 16, -1px / 16 */
+    box-shadow: -0.1875em -0.0625em 0px 0px #854836;
     transform: rotate(45deg);
   }
   
@@ -419,30 +428,14 @@ h1 {
     width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 1200px) {
     body {
-      font-size: 80%;
+      transform: scale(0.8);
     }
-    .top {
-      margin-top: 5em;
-      margin-left: 5em;
+  }
+  
+  @media (max-width: 800px) {
+    body {
+      transform: scale(0.6);
     }
-    .container {
-      margin-bottom: 5em;
-    }
-    .heading h1 {
-      font-size: 4.5vw;
-    }
-    .heading h2 {
-      font-size: 2.5vw;
-    }
-    .heading h3 {
-      font-size: 1.5vw;
-    }
-    .col-6 {
-      margin-left: 10em;
-    }
-    .top-pig-pink, .pig-two {
-      margin: 2em 0 2em 10em;
-    } 
   }
