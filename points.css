@@ -328,10 +328,14 @@ body {
   height: 10em;
   width: 34em;
   margin-left: 20%;
+  padding: 1em;
+  margin-top: 0.8em; 
+  margin-left: 25%;
 }
 
 .description-text {
   font-size: 1.4em;
+  line-height: 0.3em;
 }
 #start-mud-points {
   margin: -10em -30em 0.5em -80em;
@@ -387,23 +391,26 @@ body {
 
 .container-pigs-pink {
   transform: scale(0.8);
-  margin-top: 3em;
 }
+
 #description-box {
-  height: 9em;
+  height: 7em;
   width: 30em;
-  margin-left: 20%;
+  margin-left: 25%;
+  margin-top: 1em;
+  margin-bottom: -3em;
 }
 
 .description-text {
-  font-size: 1.2em;
+  font-size: 1em;
+  top: -1em;
 }
 #start-mud-points {
-  margin: -10em -26em 0.5em -70em;
+  margin: -10em -26em 0.5em -75em;
 }
 
 #index-mud-points {
-  margin: -10em -40em 0.5em 5em;
+  margin: -10em -45em 0.5em 5em;
 }
 #start-mud-points, #index-mud-points {
   transform: scale(25%);
