@@ -7,6 +7,7 @@ html, body {
 body {
   transform-origin: top left;
   position: relative; /* Add position relative */
+  background-color: #ececec;
 }
 
 
@@ -330,7 +331,7 @@ body {
   margin-left: 20%;
   padding: 1em;
   margin-top: 0.8em; 
-  margin-left: 20%;
+  margin-left: 23%;
   border: 0.4em solid #a55233; 
 }
 
@@ -339,11 +340,11 @@ body {
   line-height: 0.7em;
 }
 #start-mud-points {
-  margin: -10em -30em 0.5em -80em;
+  margin: -10em -25em 0.5em -80em;
 }
 
 #index-mud-points {
-  margin: -10em -45em 0.5em 5em;
+  margin: -10em -50em 0.5em 5em;
 }
 #start-mud-points, #index-mud-points {
   transform: scale(28%);
