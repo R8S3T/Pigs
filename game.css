@@ -630,24 +630,24 @@ body {
 }
 
 .mud {
-    right: -5%;
-    transform: scale(0.9);
+    right: -20%;
+    transform: scale(0.8);
 }
 .splash {
   right: -6%;
   top: -26em;
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 #gamePigBrown{
   left: 8em;
   top: 3em;
-  transform: scale(1);
+  transform: scale(0.9);
 }
 
 #gamePigPink{
   left: 6em;
   top: 3.8em;
-  transform: scale(1);
+  transform: scale(0.9);
 }
 .sun {
   transform: scale(1.1);
@@ -665,7 +665,8 @@ body {
   height: 60vh;
 }
 .grass {
-  height: 40vh;
+  height: 50vh;
+  margin-top: -0.2em;
 }
 }
 
@@ -770,7 +771,7 @@ body {
   height: 60vh;
 }
 .grass {
-  height: 80vh;
+  height: 40vh;
 }
 }
 
@@ -794,11 +795,11 @@ body {
 }
 
 .mud {
-    right: -15%;
-    transform: scale(0.5);
+    right: -22%;
+    transform: scale(0.7);
 }
 .splash {
-  right: -20%;
+  right: -15%;
   top: -26em;
   transform: scale(0.6);
 }
@@ -829,7 +830,9 @@ body {
   height: 60vh;
 }
 .grass {
-  height: 40vh;
+  height: 60vh;
+  margin-top: -0.5em;
+  margin-bottom: -5em;
 }
 }
 
@@ -930,10 +933,10 @@ body {
   transform: scale(1);
 }
 .sky {
-  height: 60vh;
+  height: 50vh;
 }
 .grass {
-  height: 40vh;
+  height: 50vh;
 }
 }
 
