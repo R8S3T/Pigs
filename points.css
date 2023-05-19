@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#game-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  transform-origin: top left;
+  transform: translate(-50%, -50%);
+}
+
+/* Modal */
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #e3e3e3;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px; /* Add rounded corners */
+  width: 30%;
+  height: 55%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style input fields */
+.modal-content input {
+  width: 120%;
+  padding: 12px 20px;
+  margin: 0 0 1em;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Add rounded corners to input fields */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.player-name {
+  font-size: 1.5em;
+}
+.modal-content label {
+  margin-bottom: 4px;
+}
+
+
+#btn-enter {
+  display: none;
+}
+
+#start, #continue, #new-game, #exit {
+    background-color: #dbd8e3;
+    height: 2em;
+    width: 10em;
+    border-radius: 10%;
+    font-size: 1.2em;
+    margin-top: 10%;
+}
+
+
+#player-message {
+  font-size: 2em; 
+  font-family: 'Arial', sans-serif; 
+  text-align: center; 
+  color: #333; 
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  width: 95%;
+}
+
+#winner-message {
+  font-size: 2em; 
+  font-family: 'Arial', sans-serif;
+  text-align: center; 
+  color: #ff8585; 
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  width: 95%;
+}
+
+#scoreboard {
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  width: 95%;
+}
+
+
+/* Description of Game*/
+#description-box {
+  border: 10px solid #a55233;
+  padding: 20px;
+  margin: 10px;
+  height: 20em;
+  width: 57em;
+  margin-left: 25%;
+  margin-top: 4%;
+}
+
+.description-text {
+  font-size: 2.2em;
+  line-height: 0.8;
+  text-align: center;
+}
+
+
+.container-pigs-brown {
+  display: block;
+  margin-top: 6em;
+  margin-left: 15%;
+  width: 100%; /* Adjust the width using a percentage */
+}
+
+.container-pigs-pink {
+  display: block;
+  margin-top: 8em;
+  margin-left: 15%;
+  width: 100%; /* Adjust the width using a percentage */
+}
+
+.col-3-brown,
+.col-3-pink {
+  display: inline-block;
+  width: 20%; /* Adjust the width using a percentage */
+  vertical-align: top;
+}
+
+.nose-down {
+    transform: rotate(50deg);
+}
+
+.on-back {
+    transform: rotate(210deg);
+    right: -3em;
+}
+
+.sitting {
+    background-color: #854836;
+}
+
+.points-pink {
+    position: absolute;
+    top: 0.65em;
+    left: 0.6em;
+    color: #ff8585;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .points-brown {
+    position: absolute;
+    top: 0.65em;
+    left: 0.6em;
+    color: #a55233;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  /* Mud Buttons */
+
+  .container-mud-buttons-points {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 1em;
+  }
+
+#start-mud-points, #index-mud-points {
+  background-color: #402a23;
+  position: relative;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  height: 9.375em;
+  width: 38em;
+  border-radius: 50%;
+  transform: scale(40%);
+}
+
+.start-mud-one-points, .index-mud-one-points {
+  background-color: #402a23;
+  position: relative;
+  height: 8.75em;
+  width: 30em;
+  top: -4.44em;
+  left: 0.625em;
+  border-radius: 50%;
+}
+
+.start-mud-two-points, .index-mud-two-points {
+  background-color: #402a23;
+  position: relative;
+  height: 8.75em;
+  width: 30em;
+  top: -4.44em;
+  left: 0.625em;
+  border-radius: 50%;
+}
+
+
+#start-mud-points {
+  margin: -30em 2em 0.5em -118em;
+}
+
+#index-mud-points {
+  margin: -30em -2em 0.5em 5em;
+}
+
+.points-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -60%);
+  z-index: 1;
+  font-size: 5em;
+  color: #e7eaf6;
+  text-align: center;
+  width: 100%; 
+}
+
+.start-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -60%);
+  z-index: 1;
+  font-size: 5em; 
+  color: #e7eaf6;
+  text-align: center;
+  width: 100%; 
+}

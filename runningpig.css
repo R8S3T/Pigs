@@ -1,0 +1,331 @@
+ /* Running pig */
+
+ .size {
+    transform: scale(65%);
+}
+
+#gamePigBrown{
+    position: relative;
+    left: 11em;
+    top: 3em;
+}
+
+#gamePigPink{
+    position: relative;
+    left: 9em;
+    top: 3.8em;
+}
+
+.body {
+    height: 5em;
+    width: 6.1em;
+    position: relative;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+}
+
+.body-brown {
+    background-color: #854836;
+}
+
+.body-pink {
+    background-color: #ffaaa5;
+}
+
+.go-brown {
+    position: relative;
+}
+
+.go-pink {
+    position: relative;
+}
+
+ .head {
+    background-color: #854836;
+    height: 4.8em;
+    width: 5.5em;
+    position: inherit;
+    top: -2em;
+    left: 2.8em;
+    border-radius: 50%;
+    box-shadow: 0.0626em 0.0626em 0.0937em -0.0626em rgb(17, 17, 17);
+}
+
+.head-brown {
+    background-color: #854836;
+}
+.head-pink {
+    background-color: #ffaaa5;
+}
+
+.nose{
+    height: 2.1em;
+    width: 1.1em;
+    border-top: -30%;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: -0.6em;
+    left: 7.8em;
+    display: flex;
+}
+
+.nose-brown {
+    background-color: #854836;
+}
+.nose-pink {
+    background-color: #ffaaa5;
+}
+
+.nostril{
+    height: 0.8em;
+    width: 0.3em;
+    border-top-left-radius: 80%;
+    border-bottom-left-radius: 90%;
+    background-color: #45171d;
+    position: relative;
+    top: 0.55em;
+    left: 0.8em;
+}
+
+.eyes {
+    background: white;
+    border: 0.12em solid #45171d;
+    height: 1.8em;
+    width: 1.6em;
+    border-radius: 100%;
+    display: flex;
+    position: absolute;
+    top: -0.8em;
+    left: 5.7em;
+}
+
+.dot {
+    height: 1em;
+    width: 1em;
+    border-radius: 100%;
+    position: relative;
+    background: #45171d;
+    top: 0.5em;
+    left: 0.5em;
+}
+
+.ears {
+    display: flex;
+    position: relative;
+}
+
+.ear-right {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: -7.8em;
+    width: 2.1em;
+    height: 2.1em;
+    left: 2.5em;
+    transform: rotate(-50deg);
+    z-index: -1;
+    box-shadow: -0.0625em -0.1875em  0.125em -0.125em black;
+    position: relative;
+}
+.ear-left {
+    background-color: black;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: -7.8em;
+    width: 2.1em;
+    height: 2.1em;
+    left: 5.3em;
+    transform: rotate(65deg);
+    box-shadow: -0.25em -0.0625em 0.125em  -0.125em black;
+    position: relative;
+}
+
+.ear-left-pink, .ear-right-pink {
+    background-color: #ffaaa5;
+}
+
+.ear-left-brown, .ear-right-brown {
+    background-color: #854836;
+}
+
+.legs {
+    display: flex;
+    position: absolute;
+}
+
+.leg-front, .leg-back {
+    background-color: #854836;
+    height: 1.3em;
+    width: 1.3em;
+    position: relative;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.leg-front-pink, .leg-back-pink {
+    background-color: #ffaaa5;
+}
+
+.leg-front-brown, 
+.leg-back-brown {
+    background-color: #854836;
+}
+
+.leg-front {
+    left: 3.2em;
+    top: -2.75em;
+}
+
+.leg-back {
+    left: 0.1em;
+    top: -2.75em;
+}
+
+.foot-front, .foot-back {
+    height: 0.4em;
+    width: 1.3em;
+    background-color: #45171d;
+    position: relative;
+    border-bottom-right-radius: 10%;
+    top: 1.2em;
+}
+
+/* Left hand part of tail */
+.tail::before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 20px;
+    width: 20px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 5px 2px 0px 0px #854836;
+    transform: rotate(95deg);
+  }
+  
+  /* Right hand part of tail */
+  .tail::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: -18px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: -3px -1px 0px 0px #854836;
+    transform: rotate(45deg);
+  }
+
+/* Keyframes animation, started in app.js */
+
+@keyframes move {
+    from {left: 5%;}
+    to {left: 50%;}
+  }
+
+@keyframes move-two {
+    from {left: 5%;}
+    to {left: 50%;}
+  }
+
+@keyframes bounce {
+	0%, 20%, 30%, 40%, 50%, 60%, 90%, 100% {transform: translateY(0);}
+	70% {transform: translateY(-10px) rotate(-10deg);}
+    75% {transform: translateY(-5px);}
+    80% {transform: translateY(-1px);}
+    85% {transform: translateY(10px);}
+}
+
+@keyframes bounce-two {
+	0%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 80%, 100% 
+    {transform: translateY(0);}
+	60% {transform: translateY(-10px) rotate(-10deg);}
+    65% {transform: translateY(-5px);}
+    70% {transform: translateY(-1px);}
+    75% {transform: translateY(10px);}
+}
+
+@keyframes jump {
+	0%, 20%, 30%, 50%, 80%, 100% {transform: translateY(1);}
+	40% {transform: translateY(-300px);}
+    65% {transform: translateY(-300px) rotate(15deg);}
+    67% {transform: translateY(-280px) rotate(18deg);}
+    69% {transform: translateY(-250px) rotate(20deg);}
+    70% {transform: translateY(-200px) rotate(45deg);}
+    72% {transform: translateY(-100px) rotate(55deg);}
+    74% {transform: translateY(-100px) rotate(65deg);}
+    76% {transform: translateY(-80px) rotate(70deg);}
+    78% {transform: translateY(-50px) rotate(75deg);}
+    90% {transform: translateY(-150px) rotate(80deg);}
+}
+
+@keyframes jump-two {
+	0%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 80%, 100% {transform: translateY(1);}
+	40% {transform: translateY(-300px);}
+    60% {transform: translateY(-300px) rotate(15deg);}
+    65% {transform: translateY(-280px) rotate(18deg);}
+    69% {transform: translateY(-250px) rotate(20deg);}
+    70% {transform: translateY(-200px) rotate(45deg);}
+    72% {transform: translateY(-100px) rotate(55deg);}
+    74% {transform: translateY(-100px) rotate(65deg);}
+    76% {transform: translateY(-80px) rotate(70deg);}
+    78% {transform: translateY(-50px) rotate(75deg);}
+    90% {transform: translateY(-150px) rotate(80deg);}
+}
+
+@keyframes running-ear-left {
+    50%{
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes running-ear-right {
+    50%{
+        transform: rotate(-40deg);
+    }
+}
+
+@keyframes run-right {
+    50%{
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes run-left {
+    50%{
+        transform: rotate(30deg);
+    }
+}
+
+
+
+/* Media Query for Tablets Ipads portrait mode */
+/* @media (min-width: 768px) and (max-width: 1024px){
+    #game, .puddle {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+} */
+  
+/* Media Query for Laptops and Desktops */
+/* @media (min-width: 1025px) and (max-width: 1280px){
+    #game {
+        transform: scale(85%);
+    }
+} */
+  
+/* Media Query for Large screens */
+/* @media (min-width: 1281px) {
+    #game {
+        transform: scale(100%);
+    }
+}
+ */

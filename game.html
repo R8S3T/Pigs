@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="points.css">
+    <title>Piggy Dice</title>
+</head>
+<body>
+    <div id="game-container">
+        <div class="sky">
+            <div class="sun"></div>
+            <div class="cloud"></div>
+            <div id="game-modal" class="modal">
+                <div class="modal-content">
+                    <form id="player-form">
+                        <div class="input-group">
+                            <input type="text" id="player1" class="player-name" placeholder="Spieler 1:" />
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="player2" class="player-name" placeholder="Spieler 2:" />
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="player3" class="player-name" placeholder="Spieler 3:" />
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="player4" class="player-name" placeholder="Spieler 4:" />
+                        </div>
+                        <button type="submit" id="start">Los geht's</button>
+                    </form>
+                    <div id="player-message"></div>
+                    <div id="winner-message"></div>
+                    <div id="scoreboard" style="display: none"></div>
+                    <p id="modal-message" style="display:none; color: red;"></p>
+                    <button id="continue" style="display:none;">Weiter</button>
+                    <button id="new-game" style="display:none">Neues Spiel</button>
+                    <button id="exit" style="display:none">Verlassen</button>
+                </div>
+            </div>
+        <div class="grass">
+                <!-- Brown Pig running -->
+            <div id="gamePigBrown">
+                <div class="go-brown go-brown-ani">
+                    <div class="body body-brown body-brown-ani">
+                        <div class="head head-brown"></div>
+                        <div class="nose nose-brown">
+                            <div class="nostril"></div>
+                        </div>
+                        <div class="eyes">
+                            <div class="eye"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="ears ears-brown">
+                            <div class="ear-left ear-left-brown ear-left-brown-ani"></div>
+                            <div class="ear-right ear-right-brown ear-right-brown-ani"></div>
+                        </div>
+                        <div class="tail"></div>
+                        <div class="legs">
+                            <div class="leg-front leg-front-brown leg-front-brown-ani"><div class="foot-front"></div></div>
+                            <div class="leg-back leg-back-brown leg-back-brown-ani"><div class="foot-back"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pink Pig running -->
+            <div id="gamePigPink">
+                <div class="go-pink go-pink-ani">
+                    <div class="body body-pink body-pink-ani">
+                        <div class="head head-pink"></div>
+                        <div class="nose nose-pink">
+                            <div class="nostril"></div>
+                        </div>
+                        <div class="eyes">
+                            <div class="eye"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="ears ears-pink">
+                            <div class="ear-left ear-left-pink ear-left-pink-ani"></div>
+                            <div class="ear-right ear-right-pink ear-right-pink-ani"></div>
+                        </div>
+                        <div class="tail-pink"></div>
+                        <div class="legs">
+                            <div class="leg-front leg-front-pink leg-front-pink-ani">
+                                <div class="foot-front">
+                                </div></div>
+                            <div class="leg-back leg-back-pink leg-back-pink-ani"><div class="foot-back"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="puddle">
+                <div class="mud">
+                    <div class="mud-one"></div>
+                    <div class="mud-two"></div>
+                </div>
+                <div class="splash">
+                    <div class="splatter0"></div>
+                    <div class="splatter1"></div>
+                    <div class="splatter2"></div>
+                    <div class="splatter3"></div>
+                    <div class="splatter4"></div>
+                    <div class="splatter5"></div>
+                    <div class="splatter6"></div>
+                    <div class="splatter7"></div>
+                    <div class="splatter8"></div>
+                    <div class="splatter9"></div>
+                    <div class="splatter10"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+<!--     <script src="script.js"></script> -->
+</body>
+</html>

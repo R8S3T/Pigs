@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="runningpig.css">
+    <link rel="stylesheet" href="points.css">
+    <title>Piggy Dice</title>
+</head>
+<body>
+    <!-- Instructions Section-->
+    <div id="game-container"> 
+        <div class="container-pigs-brown pig-row">
+            <!--Points for brown pig-->
+            <div id="pig0" class="col-3-brown standing cloned-pig">
+                <div class="body body-brown">
+                    <span class="points points-brown">0</span>
+                    <div class="head head-brown"></div>
+                    <div class="nose nose-brown">
+                        <div class="nostril"></div>
+                    </div>
+                    <div class="eyes">
+                        <div class="eye"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="ears ears-brown">
+                        <div class="ear-left ear-left-brown"></div>
+                        <div class="ear-right ear-right-brown"></div>
+                    </div>
+                    <div class="tail"></div>
+                    <div class="legs">
+                        <div class="leg-front leg-front-brown"><div class="foot-front"></div></div>
+                        <div class="leg-back leg-back-brown"><div class="foot-back"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="pig1" class="col-3-brown cloned-pig">
+                <div class="body body-brown nose-down">
+                    <span class="points points-brown">2</span>
+                    <div class="head head-brown"></div>
+                    <div class="nose nose-brown">
+                        <div class="nostril"></div>
+                    </div>
+                    <div class="eyes">
+                        <div class="eye"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="ears ears-brown">
+                        <div class="ear-left ear-left-brown"></div>
+                        <div class="ear-right ear-right-brown"></div>
+                    </div>
+                    <div class="tail"></div>
+                    <div class="legs">
+                        <div class="leg-front leg-front-brown"><div class="foot-front"></div></div>
+                        <div class="leg-back leg-back-brown"><div class="foot-back"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="pig2" class="col-3-brown cloned-pig">
+                <div class="body body-brown on-back">
+                    <span class="points points-brown">5</span>
+                    <div class="head head-brown"></div>
+                    <div class="nose nose-brown">
+                        <div class="nostril"></div>
+                    </div>
+                    <div class="eyes">
+                        <div class="eye"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="ears ears-brown">
+                        <div class="ear-left ear-left-brown"></div>
+                        <div class="ear-right ear-right-brown"></div>
+                    </div>
+                    <div class="tail"></div>
+                    <div class="legs">
+                        <div class="leg-front leg-front-brown"><div class="foot-front"></div></div>
+                        <div class="leg-back leg-back-brown"><div class="foot-back"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="pig3" class="col-3-brown cloned-pig">
+                <div class="top-body-pink sitting">
+                    <span class="points points-brown">10</span>
+                    <div class="top-head-pink sitting">
+                        <div class="top-ear-left-pink sitting"></div>
+                        <div class="top-ear-right-pink sitting"></div>
+                        <div class="top-eyes-pink">
+                            <div class="top-eye-right"></div>
+                            <div class="top-dot-pink"></div>
+                            <div class="top-eye-left"></div>
+                            <div class="top-dot-pink"></div>
+                        </div>
+                        <div class="top-nose-pink sitting">
+                            <div class="top-nostril"></div>
+                            <div class="top-nostril"></div>
+                        </div>
+                        <div class="top-foot foot-right"></div>
+                        <div class="top-foot foot-left"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="description-box">
+            <div id="description-text">
+                <p class="description-text">Unsere zwei frechen Schweinchen sind von ihrem Bauernhof ausgebüxt und haben nur ein Ziel: <br><br>Eine riesige Schlammgrube, in der sie sich voll und ganz austoben können.<br><br> Hilf den Schweinchen, so oft wie möglich in den Schlamm zu springen und sammle Punkte, um das Spiel zu gewinnen. </p>
+            </div>
+        </div>
+            <div class="container-pigs-pink pig-row">
+        <!--Points for pink pig-->
+        <div id="pig4" class="col-3-pink standing-pink cloned-pig">
+            <div class="go-pink">
+                <div class="body body-pink">
+                    <span class="points points-pink">1</span>
+                    <div class="head head-pink"></div>
+                    <div class="nose nose-pink">
+                        <div class="nostril"></div>
+                    </div>
+                    <div class="eyes">
+                        <div class="eye"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="ears ears-pink">
+                        <div class="ear-left ear-left-pink"></div>
+                        <div class="ear-right ear-right-pink"></div>
+                    </div>
+                    <div class="tail-pink"></div>
+                    <div class="legs">
+                        <div class="leg-front leg-front-pink">
+                            <div class="foot-front">
+                            </div></div>
+                        <div class="leg-back leg-back-pink"><div class="foot-back"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pig5" class="col-3-pink cloned-pig">
+            <div class="body body-pink on-back">
+                <span class="points points-pink">8</span>
+                <div class="head head-pink"></div>
+                <div class="nose nose-pink">
+                    <div class="nostril"></div>
+                </div>
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="ears ears-pink">
+                    <div class="ear-left ear-left-pink"></div>
+                    <div class="ear-right ear-right-pink"></div>
+                </div>
+                <div class="tail-pink"></div>
+                <div class="legs">
+                    <div class="leg-front leg-front-pink">
+                        <div class="foot-front">
+                        </div></div>
+                    <div class="leg-back leg-back-pink"><div class="foot-back"></div></div>
+                </div>
+            </div>
+        </div>
+        <div id="pig6" class="col-3-pink cloned-pig">
+            <div class="top-body-pink">
+                <span class="points points-pink">15</span>
+                <div class="top-head-pink">
+                    <div class="top-ear-left-pink"></div>
+                    <div class="top-ear-right-pink"></div>
+                    <div class="top-eyes-pink">
+                        <div class="top-eye-right"></div>
+                        <div class="top-dot-pink"></div>
+                        <div class="top-eye-left"></div>
+                        <div class="top-dot-pink"></div>
+                    </div>
+                    <div class="top-nose-pink">
+                        <div class="top-nostril"></div>
+                        <div class="top-nostril"></div>
+                    </div>
+                    <div class="top-foot foot-right"></div>
+                    <div class="top-foot foot-left"></div>
+                </div>
+            </div>
+        </div>
+        <div id="pig7" class="col-3-pink cloned-pig">
+            <div class="body body-pink nose-down">
+                <span class="points points-pink">4</span>
+                <div class="head head-pink"></div>
+                <div class="nose nose-pink">
+                    <div class="nostril"></div>
+                </div>
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="ears ears-pink">
+                    <div class="ear-left ear-left-pink"></div>
+                    <div class="ear-right ear-right-pink"></div>
+                </div>
+                <div class="tail-pink"></div>
+                <div class="legs">
+                    <div class="leg-front leg-front-pink">
+                        <div class="foot-front">
+                        </div></div>
+                    <div class="leg-back leg-back-pink"><div class="foot-back"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-mud-buttons-points">
+            <div class="mud-points" id="index-mud-points">
+                <a href="index.html" style="display: inline-block;">
+                    <div class="mud-one-points index-mud-one-points"></div>
+                    <div class="mud-two-points index-mud-two-points"></div>
+                    <div class="points-text">Zurück</div>
+                </a>
+            </div>
+            <div class="mud-points" id="start-mud-points">
+                <a href="game.html" style="display: inline-block;">
+                    <div class="mud-one-points start-mud-one-points"></div>
+                    <div class="mud-two-points start-mud-two-points"></div>
+                    <div class="start-text">Start</div>
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- End Instructions Section -->
+    <script src="app.js"></script>
+<!--     <script src="script.js"></script> -->
+</body>
+</html>
