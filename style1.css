@@ -427,7 +427,7 @@ h1 {
     width: 100%;
 }
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     body {
       transform: scale(0.8);
     }
@@ -437,4 +437,4 @@ h1 {
     body {
       transform: scale(0.6);
     }
-  } */
+  }
