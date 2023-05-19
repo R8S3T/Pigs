@@ -780,8 +780,13 @@ body {
     transform: scale(0.6);
   }
   .mud {
-    right: -10%;
+    right: -2em;
     transform: scale(0.7);
+}
+.splash {
+  right: 3em;
+  top: -28em;
+  transform: scale(0.6);
 }
 
 }
